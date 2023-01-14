@@ -1,0 +1,17 @@
+.navbar{
+    .nav-link{
+        font-weight: bold;
+        font-size: .9rem;
+    }
+    .search-btn{
+        font-size: 0.9rem;
+        font-weight: bold;
+        background-color: rgb(249, 79, 17);
+        color: #fff;
+
+        &:hover{
+            background-color: rgba(249, 79, 17, .9);
+            color: rgb(228, 225, 225);
+        }
+    }
+}

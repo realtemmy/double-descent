@@ -1,0 +1,31 @@
+.card-container {
+  position: relative;
+  overflow: hidden;
+  .img {
+    height: 25rem;
+    background-size: cover;
+    background-position: top center;
+
+    .content {
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: rgb(255, 255, 255, 0.5);
+      padding: 20px 15px;
+      opacity: 1;
+    }
+    &:hover {
+      .content {
+        opacity: .8;
+        background-color: rgb(255, 255, 255);
+      }
+    }
+  }
+  &:hover{
+    .img{
+      transform: scale(1.1);
+      transition: transform ease-out 1.8s;
+    }
+  }
+}

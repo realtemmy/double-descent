@@ -1,0 +1,22 @@
+.button-container {
+  .button {
+    font-weight: bold;
+    background-color: orange;
+    color: rgb(255, 255, 255, 0.85);
+    padding: 0.3rem 1rem;
+    width: 80%;
+    // margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: rgb(255, 165, 0, 0.8);
+      box-shadow: 1px 2px 2px rgb(0, 0, 0, .3);
+      transform: translateY(-2px);
+      transition: transform .2s ease-out;
+    }
+    &:active{
+      transform: translateY(0);
+    }
+  }
+}
