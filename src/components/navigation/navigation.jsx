@@ -10,7 +10,6 @@ const Navigation = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <div className="container-fluid">
             <Link to="/" className="navbar-brand logo">
-              {/* double <span>descent</span> */}
               <Logo />
             </Link>
             <button
@@ -31,11 +30,11 @@ const Navigation = () => {
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <Link
-                    to="/about"
+                    to="/shop"
                     className="nav-link"
                     aria-current="page"
                   >
-                    About
+                    Shop
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -82,14 +81,14 @@ const Navigation = () => {
                   <Link
                     to="/sign-in"
                     className="nav-link"
-                    tabindex="-1"
+                    tabIndex="-1"
                     // aria-disabled="true"
                   >
                     Login
                   </Link>
                 </li>
               </ul>
-              <form className="d-flex">
+              <form  className="d-flex">
                 <input
                   className="form-control me-2"
                   type="search"

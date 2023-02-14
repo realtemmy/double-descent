@@ -1,0 +1,11 @@
+.product-preview-container {
+  h4 {
+    font-weight: 300;
+    font-family: cursive;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+  }
+}

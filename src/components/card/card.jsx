@@ -1,28 +1,41 @@
-import "./card.scss";
+import Button from '../button/button'
+import './card.scss'
 
-const cardItems = [
-  {
-    id: 1,
-    title: "provisions",
-    imageUrl:
-      "https://media.istockphoto.com/id/1412238887/photo/planogram-pasta-on-shelf-in-supermarket.jpg?s=1024x1024&w=is&k=20&c=O5fzM0y5RoAgn1_uqRLUECnjZKfLD_gXRiUWJXpychM=",
-    slug: "/categories/provision",
-  },
-  {
-    id: 2,
-    title: "beverages",
-    imageUrl:
-      "https://images.unsplash.com/photo-1577695464142-e3a24f4e88f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    slug: "/categories/beverages",
-  },
-];
-
-const Card = () => {
-  return <div className="card-container">
-    {
-        cardItems.map(card => <Card />)
-    }
-  </div>;
+const Card = ({ product }) => {
+  const { name, price, desc, img } = product;
+  return (
+    <div className='card-container'
+    >
+        <div className="img-container">
+            <img src={img} alt={name} />
+        </div>
+        <Button value="add to cart" />
+      {/* <div
+        style={{
+          backgroundImage: `url(${img})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+          width: "100%",
+          backgroundPosition: "center center",
+          height: 200,
+          position:"relative"
+          //   background
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            bottom: "50%",
+            transform:"translate(40%, 50%)"
+          }}
+        >
+          <div>{name}</div>
+          <div>{price}</div>
+          <div>{desc}</div>
+        </div>
+      </div> */}
+    </div>
+  );
 };
 
 export default Card;

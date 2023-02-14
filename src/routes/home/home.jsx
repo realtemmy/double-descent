@@ -1,5 +1,4 @@
 import DirectoryItem from '../../components/directory-item/directoryItem';
-import Button from '../../components/button/button';
 import './home.scss'
 const Home = () =>{
     const data = [
@@ -8,35 +7,35 @@ const Home = () =>{
         title: "provisions",
         imageUrl:
           "https://media.istockphoto.com/id/1412238887/photo/planogram-pasta-on-shelf-in-supermarket.jpg?s=1024x1024&w=is&k=20&c=O5fzM0y5RoAgn1_uqRLUECnjZKfLD_gXRiUWJXpychM=",
-        slug: "/categories/provision",
+        slug: "shop/provisions",
       },
       {
         id: 2,
         title: "beverages",
         imageUrl:
           "https://images.unsplash.com/photo-1577695464142-e3a24f4e88f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        slug: "/categories/beverages",
+        slug: "shop/beverages",
       },
       {
         id: 3,
         title: "home-utensils",
         imageUrl:
           "https://media.istockphoto.com/id/542589774/photo/design-concept-of-mockup-arious-kitchenware-utensils-set-on-whit.jpg?s=612x612&w=is&k=20&c=NwtIAefYUzU5FwJb6V9tVPB4WjQEwS0ye_XYdOFNffI=",
-        slug: "/categories/home-utensils",
+        slug: "shop/home-utensils",
       },
       {
         id: 4,
         title: "mens",
         imageUrl:
           "https://images.unsplash.com/photo-1623596305214-19f21cbf48ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
-        slug: "categories/mens",
+        slug: "shop/mens",
       },
       {
         id: 5,
         title: "womens",
         imageUrl:
           "https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-        slug: "categories/womens",
+        slug: "shop/womens",
       },
       {
         id: 6,
@@ -44,20 +43,20 @@ const Home = () =>{
         imageUrl:
           "https://images.unsplash.com/photo-1611428813653-aa606c998586?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
 
-        slug: "categories/kids",
+        slug: "shop/kids",
       },
       {
         id: 7,
         title: "cosmetics",
         imageUrl:
           "https://images.unsplash.com/photo-1498843053639-170ff2122f35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        slug: 'categories/cosmetics'
+        slug: 'shop/cosmetics'
       },
       {
         id: 8,
         title: "others",
         imageUrl: null,
-        slug: 'categories/others'
+        slug: 'shop/others'
       }
     ];
     return (
@@ -65,7 +64,6 @@ const Home = () =>{
         {data.map((el) => (
           <DirectoryItem key={el.id} category={el} />
         ))}
-        <Button value={'Add to cart'} />
       </div>
     );
 }

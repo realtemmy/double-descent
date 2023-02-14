@@ -1,0 +1,30 @@
+.footer-mail-container {
+  background-color: rgba(255, 112, 32, 1);
+  color: #fff;
+  .paragraph{
+    font-size: 12px;
+  }
+  .mail-submit {
+    background-color: #fff;
+    padding: 0 5px;
+    border-radius: 5px;
+    width: 100%;
+    .mail-input {
+      width: 100%;
+      outline: none;
+      border: none;
+      width: 75%;
+      &::placeholder{
+        color: rgba(0, 0, 0, 0.28);
+      }
+    }
+    .btn-subscribe {
+      background-color: rgba(86, 86, 86, 1);
+      font-size: 12px;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      width: 25%;
+    }
+  }
+}
